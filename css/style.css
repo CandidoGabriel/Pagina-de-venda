@@ -101,17 +101,20 @@ section.chamada{
 	top: -50px;
 	width: 100%;
 	position: relative;
-	padding: 40px 0;
+	padding: 50px 0;
 	text-align: center;
 	display: inline-block;
+}
+section.chamada .container{
+	padding: 50px 0;
 	background-color: #7c6757;
 }
 section.chamada h2{
 	width: 96%;
-	max-width: 600;
+	max-width: 700;
 	display: inline-block;
 	color: white;
-	font-size: 30px;
+	font-size: 24px;
 	font-weight: normal;
 }
 @media screen and (max-width: 510px){
