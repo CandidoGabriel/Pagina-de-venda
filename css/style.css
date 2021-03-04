@@ -39,22 +39,20 @@ header{
 }
 section.cover-form{
 	width: 100%;
-	padding: 0 2%;
 }
 .bg{
+	position: relative;
 	height: 500px;
 	background-position: center;
 	background-size: cover;
 	background-image: url('../imagens/bg-form.jpg');
 }
 .form-container{
-	float: right;
-	margin-right: 40px;
+	position: absolute;
+	right: 30px;
+	top: -2.5%;
 	width: 400px;
-	height: 110%;
-	position: relative;
-	top: -5%;
-	z-index: 2;
+	height: 105%;
 	box-shadow: 1px 1px 2px 1px rgb(180, 180, 180);
 	background-color: white;
 }
@@ -97,25 +95,42 @@ section.cover-form{
 	border: 0;
 }
 section.chamada{
-	z-index: 1;
-	top: -50px;
 	width: 100%;
-	position: relative;
-	padding: 50px 0;
 	text-align: center;
-	display: inline-block;
 }
-section.chamada .container{
-	padding: 50px 0;
+section.chamada div.container{
 	background-color: #7c6757;
+	padding: 70px 0 50px 0;
 }
-section.chamada h2{
-	width: 96%;
+section.chamada p{
+	width: 98%;
 	max-width: 700;
 	display: inline-block;
 	color: white;
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: normal;
+}
+section.chamada h2{
+	width: 98%;
+	max-width: 700;
+	display: inline-block;
+	color: white;
+	font-size: 27px;
+	font-weight: bold;
+}
+@media screen and (max-width: 960px){
+	.bg{
+		height: auto;
+		text-align: center;
+		padding: 40px 0;
+	}
+	.form-container{
+		height: auto;
+		width: 96%;
+		max-width: 400px;
+		position: static;
+		display: inline-block;
+	}
 }
 @media screen and (max-width: 510px){
 	header{
